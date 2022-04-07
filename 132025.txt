@@ -1,0 +1,280 @@
+4. 
+C:\Users\Darko\Desktop\Lab1>cd SI_2022_lab1_132025
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git remote -v
+origin  https://github.com/dcstojanovski/SI_2022_lab1_132025.git (fetch)
+origin  https://github.com/dcstojanovski/SI_2022_lab1_132025.git (push)
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+5. 
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>notepad shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git add shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git commit -m "Add 5 items to the shopping list"
+[master 289ddfe] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+6. 
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git add shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git commit -m "Add quantities to the items."
+[master eeea77b] Add quantities to the items.
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+7. 
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git branch branch1
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git branch branch2
+
+8. 
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git log
+commit eeea77b1124dc02b1465d359991710d37efe65bb (HEAD -> master, branch2, branch1)
+Author: Darko Stojanovski <dc.stojanovski@gmail.com>
+Date:   Thu Apr 7 23:31:48 2022 +0200
+
+    Add quantities to the items.
+
+commit 289ddfecfe7ee73ca0d917a54b0b00d990e93514
+Author: Darko Stojanovski <dc.stojanovski@gmail.com>
+Date:   Thu Apr 7 23:30:51 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ccac983b30694870d345064819c86f423fe10a6d (origin/master, origin/HEAD)
+Author: dcstojanovski <102418893+dcstojanovski@users.noreply.github.com>
+Date:   Thu Apr 7 23:22:20 2022 +0200
+
+    Update README.md
+
+commit 8bba8adfc8da6e82622e588039fde9f8b93a88ad
+Author: dcstojanovski <102418893+dcstojanovski@users.noreply.github.com>
+Date:   Thu Apr 7 23:21:35 2022 +0200
+
+    Initial commit
+
+9.
+ 
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 727 bytes | 727.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/dcstojanovski/SI_2022_lab1_132025.git
+   ccac983..eeea77b  master -> master
+
+10.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git checkout branch1
+Switched to branch 'branch1'
+
+11.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>notepad shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git add shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git commit -m "Change quantity of item #5"
+[branch1 7f7a95f] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+13.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>notepad shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git add shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git commit -m "Change quantity of item #2"
+[master d2adf05] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 339 bytes | 339.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dcstojanovski/SI_2022_lab1_132025.git
+   eeea77b..d2adf05  master -> master
+
+15.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git checkout branch2
+Switched to branch 'branch2'
+
+16.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>notepad shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git add shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git commit -m "Modify item #4"
+[branch2 e5b5175] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+17.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git log
+commit e5b5175aca51856c02a61e0c8ac4e117584b7719 (HEAD -> branch2)
+Author: Darko Stojanovski <dc.stojanovski@gmail.com>
+Date:   Thu Apr 7 23:41:25 2022 +0200
+
+    Modify item #4
+
+commit eeea77b1124dc02b1465d359991710d37efe65bb
+Author: Darko Stojanovski <dc.stojanovski@gmail.com>
+Date:   Thu Apr 7 23:31:48 2022 +0200
+
+    Add quantities to the items.
+
+commit 289ddfecfe7ee73ca0d917a54b0b00d990e93514
+Author: Darko Stojanovski <dc.stojanovski@gmail.com>
+Date:   Thu Apr 7 23:30:51 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ccac983b30694870d345064819c86f423fe10a6d
+Author: dcstojanovski <102418893+dcstojanovski@users.noreply.github.com>
+Date:   Thu Apr 7 23:22:20 2022 +0200
+
+    Update README.md
+
+commit 8bba8adfc8da6e82622e588039fde9f8b93a88ad
+Author: dcstojanovski <102418893+dcstojanovski@users.noreply.github.com>
+Date:   Thu Apr 7 23:21:35 2022 +0200
+
+    Initial commit
+
+18.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>notepad shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git add shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git commit --amend -m "Modify item #4 and add item #6"
+[branch2 f1e3e28] Modify item #4 and add item #6
+ Date: Thu Apr 7 23:41:25 2022 +0200
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+19.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git log
+commit f1e3e2881192288cfc9a6660c9abeb6df7299977 (HEAD -> branch2)
+Author: Darko Stojanovski <dc.stojanovski@gmail.com>
+Date:   Thu Apr 7 23:41:25 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit eeea77b1124dc02b1465d359991710d37efe65bb
+Author: Darko Stojanovski <dc.stojanovski@gmail.com>
+Date:   Thu Apr 7 23:31:48 2022 +0200
+
+    Add quantities to the items.
+
+commit 289ddfecfe7ee73ca0d917a54b0b00d990e93514
+Author: Darko Stojanovski <dc.stojanovski@gmail.com>
+Date:   Thu Apr 7 23:30:51 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ccac983b30694870d345064819c86f423fe10a6d
+Author: dcstojanovski <102418893+dcstojanovski@users.noreply.github.com>
+Date:   Thu Apr 7 23:22:20 2022 +0200
+
+    Update README.md
+
+commit 8bba8adfc8da6e82622e588039fde9f8b93a88ad
+Author: dcstojanovski <102418893+dcstojanovski@users.noreply.github.com>
+Date:   Thu Apr 7 23:21:35 2022 +0200
+
+    Initial commit
+
+20.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git branch
+  branch1
+  branch2
+* master
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+21.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   shopping_list.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git add shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   shopping_list.txt
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git merge
+
+
+Mi otvori Vi editor za da ja editnam commit porakata. Napraviv write i quit na editorot
+
+"C:/Users/Darko/Desktop/Lab1/SI_2022_lab1_132025/.git/COMMIT_EDITMSG" [unix] 23L, 570B written
+[master 2b0bfeb] Merge branch 'branch2'
+
+
+
+
+
+
+
+
