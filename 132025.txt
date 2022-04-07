@@ -271,7 +271,16 @@ Mi otvori Vi editor za da ja editnam commit porakata. Napraviv write i quit na e
 "C:/Users/Darko/Desktop/Lab1/SI_2022_lab1_132025/.git/COMMIT_EDITMSG" [unix] 23L, 570B written
 [master 2b0bfeb] Merge branch 'branch2'
 
+22. C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git add 132025.txt
 
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git commit -m "Add docs"
+[master 98618c7] Add docs
+ 1 file changed, 280 insertions(+)
+ create mode 100644 132025.txt
+
+23.
+
+C:\Users\Darko\Desktop\Lab1\SI_2022_lab1_132025>git push
 
 
 
